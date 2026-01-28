@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Pembacaan Meter',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Melakukan pembacaan meter pelanggan secara akurat dan tepat waktu
+        sebagai dasar perhitungan tagihan listrik setiap bulan.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Penagihan & Pemberitahuan Tagihan',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Melaksanakan penagihan kepada pelanggan pascabayar serta memberikan
+        pemberitahuan tagihan dan jatuh tempo pembayaran secara langsung.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Pemutusan Sementara',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Melakukan pemutusan sementara aliran listrik sesuai prosedur
+        terhadap pelanggan yang belum menyelesaikan kewajiban pembayaran.
       </>
     ),
   },
