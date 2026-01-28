@@ -15,9 +15,8 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle" style={{fontStyle : "italic"}}>{siteConfig.tagline}</p>
         <div style={{ maxWidth: 600, margin: '1.5rem auto' }}>
-          <SearchBar />
         </div>
         <div className={styles.buttons}>
           <Link
