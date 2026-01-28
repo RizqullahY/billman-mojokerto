@@ -1,8 +1,8 @@
 import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Billman Mojokerto",
-  tagline: "Komitmen Kami Bekerja Tanpa Suap",
+  title: "BILLMAN MOJOKERTO",
+  tagline: '"Komitmen Kami Bekerja Tanpa Suap"',
   favicon: "img/favicon.ico",
   future: {
     v4: true,
@@ -61,10 +61,10 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "My Site",
+        title: "Beranda",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Logo Beranda",
+          src: "img/favicon.ico",
         },
         items: [
           {
