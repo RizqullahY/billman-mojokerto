@@ -28,5 +28,5 @@ jobs:
           GIT_USER: RizqullahY
         run: |
           git config --global user.name "RizqullahY"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.email "rizqullahyusufrafly@gmail.com"
           npm run deploy
