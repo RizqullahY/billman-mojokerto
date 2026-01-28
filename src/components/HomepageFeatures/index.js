@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Pembacaan Meter',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/pembacaan.svg').default,
     description: (
       <>
         Melakukan pembacaan meter pelanggan secara akurat dan tepat waktu
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Penagihan & Pemberitahuan Tagihan',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/penagihan.svg').default,
     description: (
       <>
         Melaksanakan penagihan kepada pelanggan pascabayar serta memberikan
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Pemutusan Sementara',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/pemutusan.svg').default,
     description: (
       <>
         Melakukan pemutusan sementara aliran listrik sesuai prosedur
@@ -39,7 +39,7 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* <Svg className={styles.featureSvg} role="img" /> */}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
