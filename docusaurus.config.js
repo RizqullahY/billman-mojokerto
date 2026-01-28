@@ -1,7 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "BILLMAN MOJOKERTO",
+  title: "BILLMAN MOKA",
   tagline: '"Komitmen Kami Bekerja Tanpa Suap"',
   favicon: "img/favicon.ico",
   future: {
@@ -71,7 +71,7 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "FAQ",
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {

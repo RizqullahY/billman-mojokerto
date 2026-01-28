@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Pembacaan Meter',
-    Svg: require('@site/static/img/pembacaan.svg').default,
+    imgSrc: 'https://raw.githubusercontent.com/RizqullahY/billman-mojokerto/refs/heads/master/static/img/pembacaan.png',
     description: (
       <>
         Melakukan pembacaan meter pelanggan secara akurat dan tepat waktu
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Penagihan & Pemberitahuan Tagihan',
-    Svg: require('@site/static/img/penagihan.svg').default,
+    imgSrc: 'https://raw.githubusercontent.com/RizqullahY/billman-mojokerto/refs/heads/master/static/img/penagihan.png',
     description: (
       <>
         Melaksanakan penagihan kepada pelanggan pascabayar serta memberikan
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Pemutusan Sementara',
-    Svg: require('@site/static/img/pemutusan.svg').default,
+    imgSrc: 'https://raw.githubusercontent.com/RizqullahY/billman-mojokerto/refs/heads/master/static/img/pemutusan.png',
     description: (
       <>
         Melakukan pemutusan sementara aliran listrik sesuai prosedur
@@ -35,11 +35,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({imgSrc, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imgSrc} className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
