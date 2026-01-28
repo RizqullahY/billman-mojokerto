@@ -1,7 +1,9 @@
-name: Deploy Docusaurus (Manual)
+name: Deploy Docusaurus
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 permissions:
   contents: write
@@ -14,7 +16,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          persist-credentials: false   # IMPORTANT
+          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,8 +30,8 @@ jobs:
       - name: Deploy
         env:
           GIT_USER: RizqullahY
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "RizqullahY"
+          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
           npm run deploy
