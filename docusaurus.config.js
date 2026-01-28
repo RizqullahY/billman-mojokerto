@@ -1,109 +1,113 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Billman Mojokerto',
-  tagline: 'Komitmen Kami Bekerja Tanpa Suap',
-  favicon: 'img/favicon.ico',
+  title: "Billman Mojokerto",
+  tagline: "Komitmen Kami Bekerja Tanpa Suap",
+  favicon: "img/favicon.ico",
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  url: 'https://rizqullahy.github.io',
-  baseUrl: '/billman-mojokerto/',
-  organizationName: 'RizqullahY', // Usually your GitHub org/user name.
-  projectName: 'billman-mojokerto', // Usually your repo name.
+  url: "https://rizqullahy.github.io",
+  baseUrl: "/billman-mojokerto/",
+  organizationName: "RizqullahY",
+  projectName: "billman-mojokerto",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "classic",
+      {
         docs: {
-          sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/RizqullahY/billman-mojokerto/docs',
+          sidebarPath: "./sidebars.js",
+          editUrl: "https://github.com/RizqullahY/billman-mojokerto/docs",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/RizqullahY/billman-mojokerto/blog',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: "https://github.com/RizqullahY/billman-mojokerto/blog",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
-      }),
+      },
+    ],
+  ],
+
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: "My Site",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Tutorial",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://github.com/RizqullahY/billman-mojokerto',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/RizqullahY/billman-mojokerto",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Tutorial",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com',
-              }
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com",
+              },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/RizqullahY',
+                label: "GitHub",
+                href: "https://github.com/RizqullahY",
               },
             ],
           },
