@@ -1,39 +1,37 @@
-# name: Deploy Docusaurus to GitHub Pages
+name: Deploy Docusaurus
 
-# on:
-#   push:
-#     branches:
-#       - master
-#     tags:
-#       - 'v*'
+on:
+  push:
+    branches:
+      - master
 
-# permissions:
-#   contents: write
+permissions:
+  contents: write
 
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout repo
-#         uses: actions/checkout@v4
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
-#       - name: Setup Node.js
-#         uses: actions/setup-node@v4
-#         with:
-#           node-version: 20
-#           cache: npm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
 
-#       - name: Install dependencies
-#         run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-#       - name: Build website
-#         run: npm run build
-
-#       - name: Deploy to GitHub Pages
-#         env:
-#           GIT_USER: RizqullahY
-#         run: |
-#           git config --global user.name "RizqullahY"
-#           git config --global user.email "github-actions@github.com"
-#           npm run deploy
+      - name: Deploy
+        env:
+          GIT_USER: RizqullahY
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          npm run deploy
