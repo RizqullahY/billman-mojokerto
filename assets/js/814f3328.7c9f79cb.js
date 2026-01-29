@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkbillman_mojokerto_docusaurus=globalThis.webpackChunkbillman_mojokerto_docusaurus||[]).push([[472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"PENGANTAR BLOG","permalink":"/billman-mojokerto/blog/intro","unlisted":false,"date":"2026-01-08T12:46:14.000Z"}]}')}}]);

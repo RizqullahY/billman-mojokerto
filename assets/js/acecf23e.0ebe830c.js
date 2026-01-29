@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkbillman_mojokerto_docusaurus=globalThis.webpackChunkbillman_mojokerto_docusaurus||[]).push([[903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/billman-mojokerto/blog","blogTitle":"Blog","authorsListPath":"/billman-mojokerto/blog/authors"}')}}]);

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rizqullahy.github.io/billman-mojokerto/blog</id>
+    <title>BILLMAN MOKA Blog</title>
+    <updated>2026-01-08T12:46:14.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://rizqullahy.github.io/billman-mojokerto/blog"/>
+    <subtitle>BILLMAN MOKA Blog</subtitle>
+    <icon>https://rizqullahy.github.io/billman-mojokerto/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[PENGANTAR BLOG]]></title>
+        <id>https://rizqullahy.github.io/billman-mojokerto/blog/intro</id>
+        <link href="https://rizqullahy.github.io/billman-mojokerto/blog/intro"/>
+        <updated>2026-01-08T12:46:14.000Z</updated>
+    </entry>
+</feed>

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkbillman_mojokerto_docusaurus=globalThis.webpackChunkbillman_mojokerto_docusaurus||[]).push([[988],{7726(o){o.exports=JSON.parse('{"metadata":{"permalink":"/billman-mojokerto/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
