@@ -8,8 +8,8 @@ const config = {
     v4: true,
   },
 
-  url: "https://rizqullahy.github.io",
-  baseUrl: "/billman-mojokerto/",
+  url: "https://billman-mojokerto.vercel.app",
+  baseUrl: "/",
   organizationName: "RizqullahY",
   projectName: "billman-mojokerto",
 
@@ -26,7 +26,6 @@ const config = {
       {
         docs: {
           sidebarPath: "./sidebars.js",
-          // editUrl: "https://github.com/RizqullahY/billman-mojokerto/",
         },
         blog: {
           showReadingTime: true,
@@ -34,7 +33,6 @@ const config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // editUrl: "https://github.com/RizqullahY/billman-mojokerto/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -83,35 +81,6 @@ const config = {
       },
       footer: {
         style: "dark",
-        // links: [
-        //   {
-        //     title: "Docs",
-        //     items: [
-        //       {
-        //         label: "Tutorial",
-        //         to: "/docs/intro",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "Community",
-        //     items: [
-        //       {
-        //         label: "Stack Overflow",
-        //         href: "https://stackoverflow.com",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "More",
-        //     items: [
-        //       {
-        //         label: "GitHub",
-        //         href: "https://github.com/RizqullahY",
-        //       },
-        //     ],
-        //   },
-        // ],
         copyright: `Copyright © ${new Date().getFullYear()} RizqullahY. Built with Docusaurus.`,
       },
       prism: {
